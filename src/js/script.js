@@ -6,7 +6,7 @@ const horasEl = document.getElementById('horas');
 const minutosEl = document.getElementById('minutos');
 const segundosEl = document.getElementById('segundos');
 
-const novoDia = "9 mar 2024";
+const novoDia = "10 mar 2024";
 
 function contagemRegressiva() {
 

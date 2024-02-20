@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVA</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página em Manutenção</title>
 
     <!-- LINK CSS  -->
-    <link rel="stylesheet" href="./src/css/reset.min.css">
-    <link rel="stylesheet" href="./src/css/default.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="src/css/styles.css" />
 
-</head>
-<body>
-    
-    <section>
-        <div class="container">
-            <h1>Site em Manutenção</h1>
-            <p>Nosso Ambiente Virtual de Aprendizagem está sendo atualizado.
-                Voltaremos a partir do dia 09 de março...</p>
+    <!-- LINK FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header></header>
 
-            <p>Estamos trabalhando duro para trazer uma experiência incrível para você!</p>
+    <main>
+      <section id="content">
+        <div class="content-template-informacao">
+          <h1>Site em Manutenção</h1>
+          <p>
+            Nosso Ambiente Virtual de Aprendizagem está sendo atualizado.
+            Voltaremos a partir do dia 09 de março...
+          </p>
+
+          <p>
+            Estamos trabalhando duro para trazer uma experiência incrível para
+            você!
+          </p>
         </div>
 
-        <div class="relogio">
+        <div class="content-template-time">
+          <div>
+            <span id="dias">00</span>
+            <span class="tempo">Dias</span>
+          </div>
 
-            <div>
-                <span id="dias">00</span>
-                <span class="tempo">Dias</span>
-            </div>
+          <div>
+            <span id="horas">00</span>
+            <span class="tempo">Horas</span>
+          </div>
 
-            <div>
-                <span id="horas">00</span>
-                <span class="tempo">Horas</span>
-            </div>
+          <div>
+            <span id="minutos">00</span>
+            <span class="tempo">Minutos</span>
+          </div>
 
-            <div>
-                <span id="minutos">00</span>
-                <span class="tempo">Minutos</span>
-            </div>
-
-            <div>
-                <span id="segundos">00</span>
-                <span class="tempo">Segundos</span>
-            </div>
+          <div>
+            <span id="segundos">00</span>
+            <span class="tempo">Segundos</span>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
     <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
 
     <script src="./src/js/script.js"></script>
 
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-        new window.VLibras.Widget ( 'https://vlibras.gov.br/app' );
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
-</body>
+  </body>
 </html>

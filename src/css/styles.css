@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+      rgba(0, 206, 209, 0.2),
+      rgba(0, 139, 139, 0.3)
+    ),
+    url(../img/egpa-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+section#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: auto;
+  max-width: 75rem;
+  height: 100vh;
+}
+
+/* SECTION CONTENT IFORMAÇÃO */
+
+#content .content-template-informacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 37.5rem;
+}
+
+#content .content-template-informacao h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #171430;
+}
+
+#content .content-template-informacao p {
+  font-size: 1.13rem;
+}
+
+@media (max-width: 692px) {
+  #content .content-template-informacao {
+    width: 18.5rem;
+  }
+
+  #content .content-template-informacao h1 {
+    font-size: 1.4rem;
+  }
+
+  #content .content-template-informacao p {
+    font-size: 0.75rem;
+  }
+}
+
+/* SELECT CONTENT TIME  */
+
+#content .content-template-time {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px 10px 10px 20px;
+  height: 12.5rem;
+  width: 42rem;
+  background: #c4d4ab;
+  border-radius: 3px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+#content .content-template-time div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10.73rem;
+  width: 9.38rem;
+  color: #fff;
+  background-color: rgba(5, 5, 5, 0.9);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  letter-spacing: 3px;
+}
+
+#content .content-template-time span {
+  font-weight: bolder;
+  font-size: 3.75rem;
+}
+
+#content .content-template-time span.tempo {
+  font-size: 0.63rem;
+}
+
+@media (max-width: 692px) {
+  #content .content-template-time {
+    gap: 0.75rem;
+    height: 6.25rem;
+    width: 22rem;
+    letter-spacing: 1.5px;
+    padding: 0 5px 0 8px;
+  }
+
+  #content .content-template-time div {
+    height: 5.37rem;
+    width: 4.69rem;
+  }
+
+  #content .content-template-time span {
+    font-size: 1.87rem;
+  }
+
+  #content .content-template-time span.tempo {
+    font-size: 0.3rem;
+  }
+}
